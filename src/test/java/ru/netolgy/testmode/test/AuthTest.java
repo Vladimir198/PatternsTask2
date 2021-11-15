@@ -11,7 +11,7 @@ import static ru.netolgy.testmode.data.DataGenerator.Registration.getUser;
 import static ru.netolgy.testmode.data.DataGenerator.getRandomLogin;
 import static ru.netolgy.testmode.data.DataGenerator.getRandomPassword;
 
-//java -jar ./artifacts/app-ibank.jar -P:profile=test  git add -f ./artifacts/app-ibank.jar
+
 
 class AuthTest {
 
@@ -27,7 +27,7 @@ class AuthTest {
         $("[data-test-id=login] .input__control").setValue(registeredUser.getLogin());
         $("[data-test-id=password] .input__control").setValue(registeredUser.getPassword());
         $$("button").find(exactText("Продолжить")).click();
-        $("h2").shouldBe(exactTextCaseSensitive("ичный кабинет"));
+        $("h2").shouldBe(exactTextCaseSensitive("Личный кабинет"));
         // TODO: добавить логику теста, в рамках которого будет выполнена попытка входа в личный кабинет с учётными
         //  данными зарегистрированного активного пользователя, для заполнения полей формы используйте
         //  пользователя registeredUser
