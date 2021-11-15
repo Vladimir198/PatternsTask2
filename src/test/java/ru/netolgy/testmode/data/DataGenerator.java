@@ -1,4 +1,4 @@
-package testmode.data;
+package ru.netolgy.testmode.data;
 
 import com.github.javafaker.Faker;
 import io.restassured.builder.RequestSpecBuilder;

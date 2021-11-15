@@ -1,4 +1,4 @@
-package testmode.test;
+package ru.netolgy.testmode.test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static ru.netology.testmode.data.DataGenerator.Registration.getRegisteredUser;
-import static ru.netology.testmode.data.DataGenerator.Registration.getUser;
-import static ru.netology.testmode.data.DataGenerator.getRandomLogin;
-import static ru.netology.testmode.data.DataGenerator.getRandomPassword;
+import static ru.netolgy.testmode.data.DataGenerator.Registration.getRegisteredUser;
+import static ru.netolgy.testmode.data.DataGenerator.Registration.getUser;
+import static ru.netolgy.testmode.data.DataGenerator.getRandomLogin;
+import static ru.netolgy.testmode.data.DataGenerator.getRandomPassword;
 
-//java -jar ./artifacts/app-ibank.jar -P:profile=test
+//java -jar ./artifacts/app-ibank.jar -P:profile=test  git add -f ./artifacts/app-ibank.jar
 
 class AuthTest {
 
